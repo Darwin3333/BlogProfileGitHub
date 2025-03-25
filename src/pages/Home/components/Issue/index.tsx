@@ -2,7 +2,7 @@
 import { IIssues } from '../Summary';
 import { IssuesContainer, StyledNavLink } from './styles';
 
-export function Issue({ id, title, body, html_url, created_at }: IIssues) {
+export function Issue({ title, body, created_at }: IIssues) {
   return (
     <IssuesContainer>
       <StyledNavLink to="/issue">
