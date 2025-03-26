@@ -10,7 +10,10 @@ export function Issue({ title, body, created_at }: IIssues) {
           <h2>{title}</h2>
           <span>{new Date(created_at).toLocaleString()}</span>{' '}
         </div>
-        <div style={{ color: 'white', marginTop: '60px' }}> {body}</div>
+        <div style={{ color: 'white', marginTop: '60px' }}>
+          {' '}
+          {body?.slice(0, 200)}
+        </div>
       </StyledNavLink>
     </IssuesContainer>
   );
