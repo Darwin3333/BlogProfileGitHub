@@ -49,11 +49,11 @@ export function Summary() {
       setLoading(false);
     }
   }
-
+  //https://api.github.com/repos/lucaspedronet/BlogProfileGitHub/issues'
   async function fetchIssues() {
     try {
       const issuesData = await axios.get(
-        'https://api.github.com/repos/lucaspedronet/BlogProfileGitHub/issues'
+        'https://api.github.com/repos/facebook/react/issues'
       );
       console.log(issuesData.data);
       const filteredIssues = issuesData.data.filter(
