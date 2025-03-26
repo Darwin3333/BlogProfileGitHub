@@ -53,7 +53,7 @@ export function Summary() {
   async function fetchIssues() {
     try {
       const issuesData = await axios.get(
-        'https://api.github.com/repos/lucaspedronet/TudoLista/issues'
+        'https://api.github.com/repos/lucaspedronet/BlogProfileGitHub/issues'
       );
       console.log(issuesData.data);
       const filteredIssues = issuesData.data.filter(
@@ -122,7 +122,8 @@ export function Summary() {
           </section>
         </SummaryContainer>
       )}
-      {issues &&
+      {profile &&
+        issues &&
         issues.map((issue) => (
           <Issue
             key={issue.id}
