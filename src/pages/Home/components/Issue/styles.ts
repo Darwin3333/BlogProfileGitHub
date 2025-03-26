@@ -11,7 +11,7 @@ export const IssuesContainer = styled.div`
   height: 16.25rem;
   width: 100%;
   overflow: hidden;
-  background-color: ${(props) => props.theme['blue-600']};
+  background-color: ${(props) => props.theme['blue-700']};
   padding: 2rem;
   border-radius: 10px;
 
