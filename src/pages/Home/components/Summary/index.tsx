@@ -1,10 +1,21 @@
-import { SummaryAnchors, SummaryContainer, SummaryHeader } from "./styles";
-
-import { ArrowUpRight, Buildings, GithubLogo, Users } from "phosphor-react";
-
+import { SummaryAnchors, SummaryContainer, SummaryHeader } from './styles';
+import { ArrowUpRight, Buildings, GithubLogo, Users } from 'phosphor-react';
+import { useEffect, useState } from 'react';
+import { api } from '../../../../lib/api';
 
 export function Summary() {
+  const [profile, setProfile] = useState();
 
+  //type IProfile{
+
+  async function fetchUser() {
+    const response = await api.get('/user/darwin3333');
+    console.log(response);
+  }
+
+  useEffect(() => {
+    fetchUser();
+  }, []);
   // "https://api.github.com/users", "/lucaspedronet"
   // "https://api.github.com/search"
   // "https://api.github.com/repos/lucaspedronet/TudoLista/issues"
@@ -20,7 +31,10 @@ export function Summary() {
             <ArrowUpRight size={12} />
           </a>
         </SummaryHeader>
-        <p>Software Engineering. developer at NodeJS, ReactJS, React Native, Electron.</p>
+        <p>
+          Software Engineering. developer at NodeJS, ReactJS, React Native,
+          Electron.
+        </p>
         <SummaryAnchors>
           <div>
             <GithubLogo size={18} />
