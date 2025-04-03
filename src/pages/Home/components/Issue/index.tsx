@@ -16,7 +16,7 @@ export function Issue({ html_url, title, body, created_at }: IIssues) {
         <StyledNavLink to={html_url}>
           <div>
             <h2>{title}</h2>
-            <span>{new Date(created_at).toLocaleString()}</span>{' '}
+            <span>{new Date(created_at).toLocaleDateString('pt-BR')}</span>{' '}
           </div>
           <div>
             <p> {body?.slice(0, 200)}</p>
