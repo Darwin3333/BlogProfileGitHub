@@ -1,5 +1,5 @@
 // import { dateFormatter } from "../../../../utils/formatter";
-import { IIssues } from '../Summary';
+import { IIssues } from '../..';
 import { IssuesContainer, StyledNavLink } from './styles';
 
 export function Issue({ html_url, title, body, created_at }: IIssues) {
