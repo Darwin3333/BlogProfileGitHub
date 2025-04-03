@@ -7,9 +7,9 @@ export const StyledNavLink = styled(NavLink)`
 
 export const IssuesListStyle = styled.div`
   display: flex;
-  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
-  gap: 1rem; /* Espaço entre os cards */
-  justify-content: space-between; /* Ajusta os cards para ficarem bem distribuídos */
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
 `;
 
 export const IssuesContainer = styled.div`
