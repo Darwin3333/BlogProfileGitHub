@@ -5,6 +5,13 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
 `;
 
+export const IssuesListStyle = styled.div`
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  gap: 1rem; /* Espaço entre os cards */
+  justify-content: space-between; /* Ajusta os cards para ficarem bem distribuídos */
+`;
+
 export const IssuesContainer = styled.div`
   margin-top: 0.5rem;
   max-width: 26rem;
